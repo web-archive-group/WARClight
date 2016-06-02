@@ -1,0 +1,167 @@
+0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
+21   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /Users/asdp/projects/BlacklightWALK/jetty/contexts at interval 0
+27   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /Users/asdp/projects/BlacklightWALK/jetty/contexts/solr.xml
+1136 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+1201 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+1213 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+1213 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /Users/asdp/projects/BlacklightWALK/jetty/solr
+1214 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/Users/asdp/projects/BlacklightWALK/jetty/solr/'
+1215 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/contrib/' to classloader
+1216 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/solr-analysis-extras-4.10.4.jar' to classloader
+1216 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/solr-clustering-4.10.4.jar' to classloader
+1216 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/solr-langid-4.10.4.jar' to classloader
+1364 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /Users/asdp/projects/BlacklightWALK/jetty/solr/solr.xml
+1445 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /Users/asdp/projects/BlacklightWALK/jetty/solr
+1452 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 1063980005
+1453 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/Users/asdp/projects/BlacklightWALK/jetty/solr/]
+1455 [main] INFO  org.apache.solr.core.CoreContainer  – loading shared library: /Users/asdp/projects/BlacklightWALK/jetty/solr/lib
+1456 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/contrib/' to classloader
+1456 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/solr-analysis-extras-4.10.4.jar' to classloader
+1461 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/solr-clustering-4.10.4.jar' to classloader
+1461 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/solr-langid-4.10.4.jar' to classloader
+1481 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+1481 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
+1488 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+1489 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+1489 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+1490 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+1490 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+1490 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+1491 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+1491 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting useRetries to: false
+1597 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=true
+1599 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+1600 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+1601 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
+1641 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /Users/asdp/projects/BlacklightWALK/jetty/solr
+1649 [main] INFO  org.apache.solr.core.CoresLocator  – Found core blacklight-core in /Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/
+1651 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+1653 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/'
+1696 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+1697 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/contrib/analysis-extras/lib/icu4j-53.1.jar' to classloader
+1697 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-fsa-1.7.1.jar' to classloader
+1697 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-polish-1.7.1.jar' to classloader
+1698 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/contrib/analysis-extras/lib/morfologik-stemming-1.7.1.jar' to classloader
+1698 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-icu-4.10.4.jar' to classloader
+1698 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-morfologik-4.10.4.jar' to classloader
+1699 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-smartcn-4.10.4.jar' to classloader
+1699 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/asdp/projects/BlacklightWALK/jetty/solr/lib/contrib/analysis-extras/lucene-libs/lucene-analyzers-stempel-4.10.4.jar' to classloader
+1753 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.0.0
+1847 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+1855 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/conf/schema.xml
+1896 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [blacklight-core] Schema name=Blacklight Demo Index
+1981 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
+1986 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
+1992 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.FloatField]. Please consult documentation how to replace it accordingly.
+1995 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
+1998 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+2167 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – default search field in schema is text
+2168 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is OR
+2169 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+2259 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'blacklight-core' using configuration from instancedir /Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/
+2280 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.StandardDirectoryFactory
+2285 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Opening new SolrCore at /Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/, dataDir=/Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/data/
+2286 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – JMX monitoring not detected for core: blacklight-core
+2295 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/data
+2301 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/data/index/
+2302 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/data/index
+2445 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+2451 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+2451 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+2451 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+2452 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+2452 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.ReplicationHandler
+2452 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+2456 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created standard: solr.StandardRequestHandler
+2456 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+2456 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+2458 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+2458 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+2459 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: org.apache.solr.handler.admin.AdminHandlers
+2461 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+2465 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created search: solr.SearchHandler
+2465 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created document: solr.SearchHandler
+2466 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created advanced: solr.SearchHandler
+2482 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+2484 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+2484 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+2485 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+2485 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+2493 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: disabled
+2493 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+2540 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=/Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/data/index,segFN=segments_2,generation=2}
+2541 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 2
+2571 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@9437626[blacklight-core] main
+2578 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/conf
+2579 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/conf}
+2591 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/conf
+2598 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/conf
+2599 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+2599 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
+2599 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2613 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: default
+2617 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: author
+2621 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: subject
+2627 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: title
+2627 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2640 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: blacklight-core
+2640 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@9437626[blacklight-core] main{StandardDirectoryReader(segments_2:3:nrt _0(4.10.4):C30)}
+2641 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/Users/asdp/projects/BlacklightWALK/jetty
+2642 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+2682 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+31898 [qtp731395981-14] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {} 0 11
+31900 [qtp731395981-14] ERROR org.apache.solr.core.SolrCore  – org.apache.solr.common.SolrException: missing content stream
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:69)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1976)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+
+32288 [qtp731395981-14] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={} {add=[00282214, 00282371, 00313831, 00314247, 43037890, 53029833, 77826928, 78908283, 79930185, 85910001, ... (30 adds)]} 0 288
+32294 [qtp731395981-13] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+32449 [qtp731395981-13] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/data/index,segFN=segments_2,generation=2}
+	commit{dir=/Users/asdp/projects/BlacklightWALK/jetty/solr/blacklight-core/data/index,segFN=segments_3,generation=3}
+32450 [qtp731395981-13] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 3
+32457 [qtp731395981-13] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@1e5c0111[blacklight-core] main
+32458 [qtp731395981-13] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+32459 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: default
+32589 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: author
+32627 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: subject
+32674 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Building spell index for spell checker: title
+32727 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@1e5c0111[blacklight-core] main{StandardDirectoryReader(segments_2:7:nrt _1(4.10.4):C30)}
+32728 [qtp731395981-13] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update/json params={commit=true} {commit=} 0 434
+50284 [qtp731395981-11] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=pub_date,memSize=4548,tindexSize=44,time=2,phase1=2,nTerms=22,bigTerms=1,termInstances=26,uses=0}
+50292 [qtp731395981-11] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_topic_facet,memSize=4485,tindexSize=58,time=1,phase1=1,nTerms=48,bigTerms=0,termInstances=54,uses=0}
+50294 [qtp731395981-11] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=language_facet,memSize=4553,tindexSize=46,time=0,phase1=0,nTerms=13,bigTerms=1,termInstances=27,uses=0}
+50295 [qtp731395981-11] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=lc_1letter_facet,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+50296 [qtp731395981-11] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_geo_facet,memSize=4465,tindexSize=57,time=0,phase1=0,nTerms=20,bigTerms=0,termInstances=23,uses=0}
+50299 [qtp731395981-11] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=subject_era_facet,memSize=4453,tindexSize=45,time=1,phase1=1,nTerms=6,bigTerms=0,termInstances=10,uses=0}
+50312 [qtp731395981-11] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={facet.query=pub_date:[2011+TO+*]&facet.query=pub_date:[2006+TO+*]&facet.query=pub_date:[1991+TO+*]&f.subject_topic_facet.facet.limit=21&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&facet.pivot=format,language_facet&sort=score+desc,+pub_date_sort+desc,+title_sort+asc&rows=10&wt=ruby&facet=true&f.language_facet.facet.limit=11} hits=30 status=0 QTime=137 
