@@ -15,3 +15,5 @@
 /log/*
 !/log/.keep
 /tmp
+/jetty/solr/discovery/data
+
