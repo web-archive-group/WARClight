@@ -1,326 +1,231 @@
 0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
-72   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/asdp/projects/BlacklightWALK/jetty/contexts at interval 0
-103  [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/asdp/projects/BlacklightWALK/jetty/contexts/solr.xml
-1457 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-1613 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
-1650 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
-1650 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/asdp/projects/BlacklightWALK/jetty/solr
-1651 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/asdp/projects/BlacklightWALK/jetty/solr/'
-1775 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/asdp/projects/BlacklightWALK/jetty/solr/solr.xml
-1971 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/asdp/projects/BlacklightWALK/jetty/solr
-1997 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 30331305
-1998 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/asdp/projects/BlacklightWALK/jetty/solr/]
-2004 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
-2004 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
-2006 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
-2006 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
-2007 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
-2007 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
-2007 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
-2007 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
-2008 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
-2008 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting useRetries to: false
-2364 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=true
-2366 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
-2366 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
-2367 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: null
-2411 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/asdp/projects/BlacklightWALK/jetty/solr
-2450 [main] INFO  org.apache.solr.core.CoresLocator  – Found core discovery in /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/
-2451 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
-2452 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/'
-2622 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.update.SolrIndexConfig  – IndexWriter infoStream solr logging is enabled
-2625 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.7.0
-2687 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
-2691 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf/schema.xml
-2712 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [discovery] Schema name=webarchive-discovery
-2825 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is AND
-2825 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
-2885 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'discovery' using configuration from instancedir /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/
-2895 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.NIOFSDirectoryFactory
-2899 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [discovery] Opening new SolrCore at /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/, dataDir=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/data/
-2918 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.JmxMonitoredMap  – No JMX servers found, not exposing Solr information with JMX.
-2920 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [discovery] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
-2921 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [discovery] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
-2927 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/data
-2950 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/data/index/
-2951 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/data/index
-2995 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created json: solr.JSONResponseWriter
-2995 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – adding lazy queryResponseWriter: solr.VelocityResponseWriter
-2995 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created velocity: solr.VelocityResponseWriter
-2997 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created xslt: solr.XSLTResponseWriter
-2997 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.response.XSLTResponseWriter  – xsltCacheLifetimeSeconds=5
-3050 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
-3054 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
-3054 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
-3054 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
-3054 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
-3057 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
-3057 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /query: solr.SearchHandler
-3058 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
-3058 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /browse: solr.SearchHandler
-3058 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
-3058 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
-3059 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update/json ignoring: org.apache.solr.handler.UpdateRequestHandler
-3059 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: solr.UpdateRequestHandler
-3059 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update/csv ignoring: org.apache.solr.handler.UpdateRequestHandler
-3059 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: solr.UpdateRequestHandler
-3059 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
-3059 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/extract: solr.extraction.ExtractingRequestHandler
-3059 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
-3059 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
-3059 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
-3059 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/document: solr.DocumentAnalysisRequestHandler
-3060 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
-3061 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
-3062 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /debug/dump: solr.DumpRequestHandler
-3067 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
-3067 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
-3067 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /spell: solr.SearchHandler
-3067 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
-3067 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /tvrh: solr.SearchHandler
-3068 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
-3068 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /terms: solr.SearchHandler
-3068 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
-3068 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /elevate: solr.SearchHandler
-3068 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestTitle: org.apache.solr.handler.component.SearchHandler
-3068 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestUrl: org.apache.solr.handler.component.SearchHandler
-3068 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestFileFormat: org.apache.solr.handler.component.SearchHandler
-3068 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestLinksHosts: org.apache.solr.handler.component.SearchHandler
-3068 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestLinksDomains: org.apache.solr.handler.component.SearchHandler
-3068 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestLinksPublicSuffixes: org.apache.solr.handler.component.SearchHandler
-3069 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestHost: org.apache.solr.handler.component.SearchHandler
-3069 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestDomain: org.apache.solr.handler.component.SearchHandler
-3069 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestPublicSuffix: org.apache.solr.handler.component.SearchHandler
-3069 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestAuthor: org.apache.solr.handler.component.SearchHandler
-3069 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestCollection: org.apache.solr.handler.component.SearchHandler
-3069 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestCollections: org.apache.solr.handler.component.SearchHandler
-3087 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3088 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3089 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3089 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3089 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3090 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3090 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3117 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 60000ms; 
-3117 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
-3252 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+20   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/asdp/projects/BlacklightWALK/jetty/contexts at interval 0
+24   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/asdp/projects/BlacklightWALK/jetty/contexts/solr.xml
+823  [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+872  [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+880  [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+880  [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/asdp/projects/BlacklightWALK/jetty/solr
+881  [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/asdp/projects/BlacklightWALK/jetty/solr/'
+954  [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/asdp/projects/BlacklightWALK/jetty/solr/solr.xml
+998  [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/asdp/projects/BlacklightWALK/jetty/solr
+1003 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 11135609
+1003 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/asdp/projects/BlacklightWALK/jetty/solr/]
+1008 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+1008 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
+1011 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+1011 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+1012 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+1012 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+1012 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+1012 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+1012 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+1013 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting useRetries to: false
+1144 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=true
+1145 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+1146 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+1146 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: null
+1166 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/asdp/projects/BlacklightWALK/jetty/solr
+1171 [main] INFO  org.apache.solr.core.CoresLocator  – Found core discovery in /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/
+1171 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+1172 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/'
+1281 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.update.SolrIndexConfig  – IndexWriter infoStream solr logging is enabled
+1284 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.7.0
+1352 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+1356 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf/schema.xml
+1375 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [discovery] Schema name=webarchive-discovery
+1445 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is AND
+1445 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+1476 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'discovery' using configuration from instancedir /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/
+1487 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.NIOFSDirectoryFactory
+1491 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [discovery] Opening new SolrCore at /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/, dataDir=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/data/
+1492 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.JmxMonitoredMap  – No JMX servers found, not exposing Solr information with JMX.
+1494 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [discovery] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+1494 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [discovery] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+1501 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/data
+1502 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/data/index/
+1503 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/data/index
+1514 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created json: solr.JSONResponseWriter
+1514 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – adding lazy queryResponseWriter: solr.VelocityResponseWriter
+1514 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created velocity: solr.VelocityResponseWriter
+1516 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created xslt: solr.XSLTResponseWriter
+1516 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.response.XSLTResponseWriter  – xsltCacheLifetimeSeconds=5
+1571 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+1574 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+1574 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+1574 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+1574 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+1577 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
+1577 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /query: solr.SearchHandler
+1577 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
+1578 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /browse: solr.SearchHandler
+1578 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+1578 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+1578 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update/json ignoring: org.apache.solr.handler.UpdateRequestHandler
+1579 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: solr.UpdateRequestHandler
+1579 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update/csv ignoring: org.apache.solr.handler.UpdateRequestHandler
+1579 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: solr.UpdateRequestHandler
+1579 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+1579 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/extract: solr.extraction.ExtractingRequestHandler
+1579 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+1579 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+1579 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+1579 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/document: solr.DocumentAnalysisRequestHandler
+1580 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
+1581 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+1582 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /debug/dump: solr.DumpRequestHandler
+1587 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+1587 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+1587 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /spell: solr.SearchHandler
+1587 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+1587 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /tvrh: solr.SearchHandler
+1587 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+1588 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /terms: solr.SearchHandler
+1588 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+1588 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /elevate: solr.SearchHandler
+1588 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestTitle: org.apache.solr.handler.component.SearchHandler
+1588 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestUrl: org.apache.solr.handler.component.SearchHandler
+1588 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestFileFormat: org.apache.solr.handler.component.SearchHandler
+1588 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestLinksHosts: org.apache.solr.handler.component.SearchHandler
+1588 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestLinksDomains: org.apache.solr.handler.component.SearchHandler
+1588 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestLinksPublicSuffixes: org.apache.solr.handler.component.SearchHandler
+1588 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestHost: org.apache.solr.handler.component.SearchHandler
+1589 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestDomain: org.apache.solr.handler.component.SearchHandler
+1589 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestPublicSuffix: org.apache.solr.handler.component.SearchHandler
+1589 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestAuthor: org.apache.solr.handler.component.SearchHandler
+1589 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestCollection: org.apache.solr.handler.component.SearchHandler
+1589 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggestCollections: org.apache.solr.handler.component.SearchHandler
+1597 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1598 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1598 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1598 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1599 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1599 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1599 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+1613 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 60000ms; 
+1613 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+1681 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
 	commit{dir=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/data/index,segFN=segments_8xv,generation=11587}
-3252 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 11587
-5590 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@10cdd5e[discovery] main
-5595 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf
-5595 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf}
-5600 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf
-5631 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf
-5631 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
-5631 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
-5631 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5635 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.DirectSolrSpellChecker  – init: {name=default,field=spell,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-5638 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5639 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.QueryElevationComponent  – Loading QueryElevation from: /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf/elevate.xml
-5658 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5659 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=title,threshold=0.005,buildOnCommit=true}
-5661 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5661 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5661 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5661 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=url,threshold=0.005,buildOnCommit=true}
-5661 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5662 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5662 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5662 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=content_type_ext,threshold=0.005,buildOnCommit=true}
-5662 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5662 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5662 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5662 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=links_hosts,threshold=0.005,buildOnCommit=true}
-5662 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5662 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=links_domains,threshold=0.005,buildOnCommit=true}
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=links_public_suffixes,threshold=0.005,buildOnCommit=true}
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=host,threshold=0.005,buildOnCommit=true}
-5663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=domain,threshold=0.005,buildOnCommit=true}
-5664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=public_suffix,threshold=0.005,buildOnCommit=true}
-5664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5665 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5665 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=author,threshold=0.005,buildOnCommit=true}
-5665 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5665 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5665 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5665 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=collection,threshold=0.005,buildOnCommit=true}
-5665 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5665 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5665 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-5666 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=collections,threshold=0.005,buildOnCommit=true}
-5666 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
-5666 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-5686 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
-5687 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@10cdd5e[discovery] main{StandardDirectoryReader(segments_8xv:51088:nrt _8u3(4.7.0):C7217934/49282:delGen=426 _9mt(4.7.0):C927132/365211:delGen=1209 _atn(4.7.0):C1138156/65980:delGen=811 _aa6(4.7.0):C808465/38670:delGen=455 _bm0(4.7.0):C1217330/55912:delGen=757 _c9o(4.7.0):C909117/65630:delGen=461 _cyf(4.7.0):C1014668/108566:delGen=730 _dyk(4.7.0):C563330/46915:delGen=185 _dmo(4.7.0):C619500/33484:delGen=363 _d7m(4.7.0):C190073/33446:delGen=383 _e59(4.7.0):C203933/4844:delGen=73 _e9f(4.7.0):C177307/43:delGen=17 _edc(4.7.0):C219076/2:delGen=2 _ea9(4.7.0):C35694 _e90(4.7.0):C4106 _e99(4.7.0):C4761 _e9b(4.7.0):C4182 _eb4(4.7.0):C36790 _eck(4.7.0):C3500 _edm(4.7.0):C291 _ecz(4.7.0):C3400 _edw(4.7.0):C33238 _ed7(4.7.0):C3255 _ed8(4.7.0):C40 _eda(4.7.0):C2957 _edh(4.7.0):C2253 _edi(4.7.0):C2947 _edk(4.7.0):C3440 _edl(4.7.0):C31 _edo(4.7.0):C29 _edp(4.7.0):C2099 _edr(4.7.0):C27 _edt(4.7.0):C31 _edv(4.7.0):C32 _edx(4.7.0):C2624 _edy(4.7.0):C3291 _edz(4.7.0):C26 _ee0(4.7.0):C3275)}
-5687 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: discovery
-5688 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/asdp/projects/BlacklightWALK/jetty
-5689 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
-5718 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
-6932 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=1245 
-6932 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
-6933 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: default
-6933 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: wordbreak
-6933 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-6933 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-6933 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-7421 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-7421 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-7421 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-8631 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-8632 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-8632 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-8786 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-8786 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-8786 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-9127 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-9127 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-9127 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-9353 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-9353 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-9353 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-9355 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-9356 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-9356 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-9534 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-9534 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-9534 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-9686 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-9686 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-9686 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-9810 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-9810 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-9810 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-9970 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-9970 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-9970 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-9970 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
-9970 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
-9970 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
-9971 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [discovery] Registered new searcher Searcher@10cdd5e[discovery] main{StandardDirectoryReader(segments_8xv:51088:nrt _8u3(4.7.0):C7217934/49282:delGen=426 _9mt(4.7.0):C927132/365211:delGen=1209 _atn(4.7.0):C1138156/65980:delGen=811 _aa6(4.7.0):C808465/38670:delGen=455 _bm0(4.7.0):C1217330/55912:delGen=757 _c9o(4.7.0):C909117/65630:delGen=461 _cyf(4.7.0):C1014668/108566:delGen=730 _dyk(4.7.0):C563330/46915:delGen=185 _dmo(4.7.0):C619500/33484:delGen=363 _d7m(4.7.0):C190073/33446:delGen=383 _e59(4.7.0):C203933/4844:delGen=73 _e9f(4.7.0):C177307/43:delGen=17 _edc(4.7.0):C219076/2:delGen=2 _ea9(4.7.0):C35694 _e90(4.7.0):C4106 _e99(4.7.0):C4761 _e9b(4.7.0):C4182 _eb4(4.7.0):C36790 _eck(4.7.0):C3500 _edm(4.7.0):C291 _ecz(4.7.0):C3400 _edw(4.7.0):C33238 _ed7(4.7.0):C3255 _ed8(4.7.0):C40 _eda(4.7.0):C2957 _edh(4.7.0):C2253 _edi(4.7.0):C2947 _edk(4.7.0):C3440 _edl(4.7.0):C31 _edo(4.7.0):C29 _edp(4.7.0):C2099 _edr(4.7.0):C27 _edt(4.7.0):C31 _edv(4.7.0):C32 _edx(4.7.0):C2624 _edy(4.7.0):C3291 _edz(4.7.0):C26 _ee0(4.7.0):C3275)}
-49922 [qtp12218612-14] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1464981917829&wt=json} status=0 QTime=2 
-50187 [qtp12218612-14] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1464981917849&wt=json} status=0 QTime=248 
-52068 [qtp12218612-13] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.menu-bottom.html [/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf/admin-extra.menu-bottom.html]
-52068 [qtp12218612-14] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.menu-top.html [/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf/admin-extra.menu-top.html]
-52069 [qtp12218612-13] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&_=1464981919975&contentType=text/html;charset%3Dutf-8} status=404 QTime=2 
-52069 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&_=1464981919974&contentType=text/html;charset%3Dutf-8} status=404 QTime=2 
-52087 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/system params={_=1464981919995&wt=json} status=0 QTime=3 
-52088 [qtp12218612-17] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.html [/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf/admin-extra.html]
-52088 [qtp12218612-17] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1464981919997} status=404 QTime=0 
-52095 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/ping params={action=status&_=1464981919999&wt=json} status=503 QTime=1 
-52095 [qtp12218612-16] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/luke params={numTerms=0&_=1464981919992&show=index&wt=json} status=0 QTime=12 
-52098 [qtp12218612-13] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/replication params={command=details&_=1464981919994&wt=json} status=0 QTime=14 
-58614 [qtp12218612-13] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={indent=true&_=1464981926523&wt=json} hits=0 status=0 QTime=1 
-160300 [qtp12218612-16] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/system params={_=1464982028208&wt=json} status=0 QTime=3 
-160304 [qtp12218612-13] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.html [/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf/admin-extra.html]
-160305 [qtp12218612-13] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1464982028208} status=404 QTime=1 
-160305 [qtp12218612-17] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/luke params={numTerms=0&_=1464982028205&show=index&wt=json} status=0 QTime=9 
-160306 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/replication params={command=details&_=1464982028207&wt=json} status=0 QTime=9 
-160304 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/ping params={action=status&_=1464982028208&wt=json} status=503 QTime=0 
-185371 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={indent=true&_=1464982053282&wt=json} hits=0 status=0 QTime=0 
-198616 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/luke params={numTerms=0&_=1464982059054&wt=json} status=0 QTime=7473 
-198622 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/luke params={_=1464982066530&show=schema&wt=json} status=0 QTime=3 
-213076 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&_=1464982080986&wt=json} status=0 QTime=1 
-215090 [qtp12218612-11] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/file params={_=1464982082999&wt=json} status=0 QTime=1 
-217793 [qtp12218612-18] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/luke params={_=1464982085701&show=schema&wt=json} status=0 QTime=3 
-221372 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/ping params={ts=1464982089280&_=1464982089281&wt=json} hits=0 status=0 QTime=2 
-221372 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/ping params={ts=1464982089280&_=1464982089281&wt=json} status=0 QTime=2 
-224007 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/mbeans params={stats=true&_=1464982091897&wt=json} status=0 QTime=21 
-239012 [qtp12218612-11] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={indent=true&_=1464982106922&wt=ruby} hits=0 status=0 QTime=0 
-687106 [qtp12218612-16] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/luke params={numTerms=0&_=1464982554923&wt=json} status=0 QTime=94 
-687111 [qtp12218612-16] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/admin/luke params={_=1464982555020&show=schema&wt=json} status=0 QTime=2 
-719438 [qtp12218612-16] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={indent=true&q=*:*&_=1464982587274&wt=json} hits=14490355 status=0 QTime=74 
-984239 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={indent=true&start=1&q=*:*&_=1464982852133&wt=json&rows=1} hits=14490355 status=0 QTime=0 
-1246553 [qtp12218612-11] ERROR org.apache.solr.core.SolrCore  – org.apache.solr.common.SolrException: sort param field can't be found: pub_date_sort
-	at org.apache.solr.search.QueryParsing.parseSortSpec(QueryParsing.java:365)
-	at org.apache.solr.search.QParser.getSort(QParser.java:247)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:174)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:197)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1976)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
-	at org.eclipse.jetty.server.Server.handle(Server.java:368)
-	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
-	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
-	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
-	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
-	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
-	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
-	at java.lang.Thread.run(Thread.java:745)
-
-1246554 [qtp12218612-11] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&sort=score+desc,+pub_date_sort+desc,+title_sort+asc&facet.query=pub_date:[2011+TO+*]&facet.query=pub_date:[2006+TO+*]&facet.query=pub_date:[1991+TO+*]&f.subject_topic_facet.facet.limit=21&f.language_facet.facet.limit=11&facet.field=format&facet.field={!ex%3Dpub_date_single}pub_date&facet.field=subject_topic_facet&facet.field=language_facet&facet.field=lc_1letter_facet&facet.field=subject_geo_facet&facet.field=subject_era_facet&wt=ruby&facet.pivot=format,language_facet&rows=10} status=400 QTime=4 
-1285227 [qtp12218612-19] ERROR org.apache.solr.core.SolrCore  – org.apache.solr.common.SolrException: sort param field can't be found: pub_date_sort
-	at org.apache.solr.search.QueryParsing.parseSortSpec(QueryParsing.java:365)
-	at org.apache.solr.search.QParser.getSort(QParser.java:247)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:174)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:197)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1976)
-	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
-	at org.eclipse.jetty.server.Server.handle(Server.java:368)
-	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
-	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
-	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
-	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
-	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
-	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
-	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
-	at java.lang.Thread.run(Thread.java:745)
-
-1285227 [qtp12218612-19] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={sort=score+desc,+pub_date_sort+desc,+title_sort+asc&wt=ruby&rows=10} status=400 QTime=1 
-1315824 [qtp12218612-19] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={wt=ruby&rows=10} hits=0 status=0 QTime=0 
-1324331 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={wt=ruby&rows=10} hits=0 status=0 QTime=0 
-1330338 [qtp12218612-15] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={q={!qf%3D$title_qf+pf%3D$title_pf}&spellcheck.dictionary=title&wt=ruby&rows=10} hits=0 status=0 QTime=0 
-1332994 [qtp12218612-13] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={wt=ruby&rows=10} hits=0 status=0 QTime=0 
-1376871 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={q=shakespeare&wt=ruby&rows=10} hits=2969 status=0 QTime=251 
+1681 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 11587
+2042 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@18d1e52[discovery] main
+2047 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf
+2047 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf}
+2052 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf
+2054 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf
+2054 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+2054 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
+2054 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2057 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.DirectSolrSpellChecker  – init: {name=default,field=spell,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2060 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2062 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.QueryElevationComponent  – Loading QueryElevation from: /home/asdp/projects/BlacklightWALK/jetty/solr/discovery/conf/elevate.xml
+2074 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2075 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=title,threshold=0.005,buildOnCommit=true}
+2076 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2077 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2077 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2077 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=url,threshold=0.005,buildOnCommit=true}
+2077 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2077 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2077 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2077 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=content_type_ext,threshold=0.005,buildOnCommit=true}
+2077 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2077 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2078 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2078 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=links_hosts,threshold=0.005,buildOnCommit=true}
+2078 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2078 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2078 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2078 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=links_domains,threshold=0.005,buildOnCommit=true}
+2078 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2078 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2078 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2078 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=links_public_suffixes,threshold=0.005,buildOnCommit=true}
+2079 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2079 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2079 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2079 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=host,threshold=0.005,buildOnCommit=true}
+2079 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2079 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2079 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2079 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=domain,threshold=0.005,buildOnCommit=true}
+2079 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2079 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2080 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2080 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=public_suffix,threshold=0.005,buildOnCommit=true}
+2080 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2080 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2080 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2080 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=author,threshold=0.005,buildOnCommit=true}
+2080 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2080 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2080 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2081 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=collection,threshold=0.005,buildOnCommit=true}
+2081 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2081 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2081 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+2081 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=collections,threshold=0.005,buildOnCommit=true}
+2081 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Registering newSearcher listener for spellchecker: suggest
+2081 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+2084 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
+2085 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@18d1e52[discovery] main{StandardDirectoryReader(segments_8xv:51088:nrt _8u3(4.7.0):C7217934/49282:delGen=426 _9mt(4.7.0):C927132/365211:delGen=1209 _atn(4.7.0):C1138156/65980:delGen=811 _aa6(4.7.0):C808465/38670:delGen=455 _bm0(4.7.0):C1217330/55912:delGen=757 _c9o(4.7.0):C909117/65630:delGen=461 _cyf(4.7.0):C1014668/108566:delGen=730 _dyk(4.7.0):C563330/46915:delGen=185 _dmo(4.7.0):C619500/33484:delGen=363 _d7m(4.7.0):C190073/33446:delGen=383 _e59(4.7.0):C203933/4844:delGen=73 _e9f(4.7.0):C177307/43:delGen=17 _edc(4.7.0):C219076/2:delGen=2 _ea9(4.7.0):C35694 _e90(4.7.0):C4106 _e99(4.7.0):C4761 _e9b(4.7.0):C4182 _eb4(4.7.0):C36790 _eck(4.7.0):C3500 _edm(4.7.0):C291 _ecz(4.7.0):C3400 _edw(4.7.0):C33238 _ed7(4.7.0):C3255 _ed8(4.7.0):C40 _eda(4.7.0):C2957 _edh(4.7.0):C2253 _edi(4.7.0):C2947 _edk(4.7.0):C3440 _edl(4.7.0):C31 _edo(4.7.0):C29 _edp(4.7.0):C2099 _edr(4.7.0):C27 _edt(4.7.0):C31 _edv(4.7.0):C32 _edx(4.7.0):C2624 _edy(4.7.0):C3291 _edz(4.7.0):C26 _ee0(4.7.0):C3275)}
+2085 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: discovery
+2086 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/asdp/projects/BlacklightWALK/jetty
+2086 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+2104 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+2134 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=48 
+2134 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
+2134 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: default
+2134 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: wordbreak
+2134 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+2134 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+2134 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+2363 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+2363 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+2363 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+2910 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+2910 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+2910 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+2915 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+2915 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+2915 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+3007 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+3007 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+3007 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+3063 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+3063 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+3063 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+3065 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+3065 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+3065 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+3072 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+3072 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+3072 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+3077 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+3077 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+3077 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+3078 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+3078 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+3079 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+3086 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+3086 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+3086 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+3087 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: suggest
+3087 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – reload()
+3087 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.Suggester  – build()
+3087 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [discovery] Registered new searcher Searcher@18d1e52[discovery] main{StandardDirectoryReader(segments_8xv:51088:nrt _8u3(4.7.0):C7217934/49282:delGen=426 _9mt(4.7.0):C927132/365211:delGen=1209 _atn(4.7.0):C1138156/65980:delGen=811 _aa6(4.7.0):C808465/38670:delGen=455 _bm0(4.7.0):C1217330/55912:delGen=757 _c9o(4.7.0):C909117/65630:delGen=461 _cyf(4.7.0):C1014668/108566:delGen=730 _dyk(4.7.0):C563330/46915:delGen=185 _dmo(4.7.0):C619500/33484:delGen=363 _d7m(4.7.0):C190073/33446:delGen=383 _e59(4.7.0):C203933/4844:delGen=73 _e9f(4.7.0):C177307/43:delGen=17 _edc(4.7.0):C219076/2:delGen=2 _ea9(4.7.0):C35694 _e90(4.7.0):C4106 _e99(4.7.0):C4761 _e9b(4.7.0):C4182 _eb4(4.7.0):C36790 _eck(4.7.0):C3500 _edm(4.7.0):C291 _ecz(4.7.0):C3400 _edw(4.7.0):C33238 _ed7(4.7.0):C3255 _ed8(4.7.0):C40 _eda(4.7.0):C2957 _edh(4.7.0):C2253 _edi(4.7.0):C2947 _edk(4.7.0):C3440 _edl(4.7.0):C31 _edo(4.7.0):C29 _edp(4.7.0):C2099 _edr(4.7.0):C27 _edt(4.7.0):C31 _edv(4.7.0):C32 _edx(4.7.0):C2624 _edy(4.7.0):C3291 _edz(4.7.0):C26 _ee0(4.7.0):C3275)}
+23429 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=crawl_years,memSize=61438556,tindexSize=44,time=1992,phase1=1280,nTerms=11,bigTerms=9,termInstances=864202,uses=0}
+24646 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=links_public_suffixes,memSize=61692197,tindexSize=74,time=1210,phase1=1191,nTerms=376,bigTerms=4,termInstances=2359959,uses=0}
+25682 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=5824 
+26707 [qtp12218612-18] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=21 
+62330 [qtp12218612-12] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=23 
+72557 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={id=sha1:DM2R5HLOTPFKBPEZDBU2S2AWAZVP7G7X/RMtjzH3bbDKvPeVZgX4g8A%3D%3D&qt=document&wt=ruby} hits=0 status=0 QTime=1 
+99660 [qtp12218612-19] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=15 
+216101 [qtp12218612-19] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=10 
+275311 [qtp12218612-19] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=98 
+354761 [qtp12218612-17] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=15 
+369413 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=8 
+376373 [qtp12218612-18] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=8 
+378752 [qtp12218612-19] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={id=sha1:DM2R5HLOTPFKBPEZDBU2S2AWAZVP7G7X/RMtjzH3bbDKvPeVZgX4g8A%3D%3D&qt=document&wt=ruby} hits=0 status=0 QTime=0 
+548815 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=11 
+585932 [qtp12218612-17] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=8 
+602351 [qtp12218612-14] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=8 
+630855 [qtp12218612-17] INFO  org.apache.solr.core.SolrCore  – [discovery] webapp=/solr path=/select params={facet=true&q=shakespeare&facet.field=content_type_norm&facet.field=crawl_years&facet.field=links_public_suffixes&facet.field=domain&facet.field=links_domains&wt=ruby&rows=10} hits=2969 status=0 QTime=8 
