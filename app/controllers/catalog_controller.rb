@@ -85,11 +85,18 @@ class CatalogController < ApplicationController
     #    :years_25 => { label: 'within 25 Years', fq: "pub_date:[#{Time.zone.now.year - 25 } TO *]" }
     # }
     #
-    #
+    
+    config.add_facet_field 'content_type_norm', label: "General Content Type", collapse: false
+    config.add_facet_field 'crawl_years', label: "Crawl Years", collapse: false
+    config.add_facet_field 'links_public_suffixes', label: "Links to Public Suffixes"
+    config.add_facet_field 'domain', label: "Domain"
+    config.add_facet_field 'links_domains', label: "Links Domains"
+
+    
     # # Have BL send all facet field names to Solr, which has been the default
     # # previously. Simply remove these lines if you'd rather use Solr request
     # # handler defaults, or have no facets.
-    # config.add_facet_fields_to_solr_request!
+     config.add_facet_fields_to_solr_request!
 
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display
@@ -97,6 +104,7 @@ class CatalogController < ApplicationController
     config.add_index_field 'host', label: 'Host'
     config.add_index_field 'crawl_date', label: 'Crawl Date'
     config.add_index_field 'content_type', label: 'Content Type'
+    config.add_index_field 'domain', label: 'Domain'
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
