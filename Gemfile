@@ -45,7 +45,7 @@ group :development do
   gem 'spring'
 end
 
-
+gem 'therubyracer'
 gem 'blacklight', '>= 6.1'
 gem 'jettywrapper', '>= 2.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
