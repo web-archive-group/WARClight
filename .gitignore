@@ -16,4 +16,4 @@
 !/log/.keep
 /tmp
 /jetty/solr/discovery/data
-
+jetty/jettywrapper.log
