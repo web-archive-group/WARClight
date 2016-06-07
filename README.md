@@ -1,8 +1,7 @@
 BlacklightWALK
 ==============
 
-# H3 Blacklight instance operating on [WALK webarchiving
-data](http://webarchives.ca/).
+# H4 Blacklight instance operating on [WALK webarchiving data](http://webarchives.ca/).
 
 To install (developers):
 
