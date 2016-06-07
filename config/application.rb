@@ -22,5 +22,8 @@ module BlacklightWALK
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.wayback_endpoint = "http://wayback.archive-it.org/"
+    config.wayback_collection = "227"
   end
 end
