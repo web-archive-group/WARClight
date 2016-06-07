@@ -14,10 +14,12 @@ To install (developers):
 5. `rake db:migrate`
 
 To use the bundled Solr index:
+
 6. Copy a Solr index of WALK data into `jetty/solr/discovery/data/index`
 7. Run `rake jetty:start`
 
 To use standalone Solr
+
 6. Edit `config/blacklight.yml` to use the URL of the Solr index.
 
 Run `rails s` to start the application.
