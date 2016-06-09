@@ -16,7 +16,8 @@
       </span>
     <% end %>
     <% @url = "#{Rails.application.config.wayback_endpoint}#{Rails.application.config.wayback_collection}/#{document.to_h['wayback_date']}/#{document.to_h['url']}" %>
-    <%=link_to document.to_h['title'], @url %>
+    <% document.to_h['title'] ? @title = document.to_h['title'] : @title = "#{document.to_h['content_type'].first.split(/\//).first.upcase}: #{document.to_h['host']} [crawled on: #{document.to_h['crawl_date'].split(/T/).first}]" %>
+    <%=link_to @title, @url %>
   </h5>
 
   <%= document_actions %>
