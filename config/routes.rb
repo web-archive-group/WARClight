@@ -1,7 +1,18 @@
 Rails.application.routes.draw do
-  
+
+  get 'static_pages/home'
+  get 'static_pages/about'
+  get 'static_pages/help'
+
   mount Blacklight::Engine => '/'
   Blacklight::Marc.add_routes(self)
+
+  get 'about', :to => 'about#show', :as => 'about_project', :defaults => {:id=>'project'} # no page specified, go to project page
+  match 'contact', :to=> 'about#contact', :as=>'contact_us', :via => [:get,:post]
+  match 'about/contact', :to=> 'about#contact', :via => [:get,:post] # specific contact us about page
+  get 'about/:id', :to => 'about#show' # catch anything else and direct to show page with ID parameter of partial to show
+
+
   root to: "catalog#index"
     concern :searchable, Blacklight::Routes::Searchable.new
 

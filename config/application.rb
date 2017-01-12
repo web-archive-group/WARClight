@@ -25,5 +25,6 @@ module BlacklightWALK
 
     config.wayback_endpoint = "http://wayback.archive-it.org/"
     config.wayback_collection = "227"
+    config.action_controller.permit_all_parameters = true
   end
 end

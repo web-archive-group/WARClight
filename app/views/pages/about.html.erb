@@ -1,34 +1,7 @@
-<div class="page-header row">
-  <h1 class="col-md-8 page-heading"><%= t('blacklight.Web Archives for Longitudinal Knowledge') %></h1>
-  <ul class="nav nav-pills col-md-4">
-    <li><a href="https://dataverse.scholarsportal.info/dataverse/wahr">Derivative Data</a></li>
-    <li><a href="http://webarchives.ca/">Old Portal</a></li>
-    <li><a href="https://github.com/web-archive-group/WALK">GitHub</a></li>
-    <li><a href="/static_pages/about">About</a></li>
-  </ul>
-
-
-</div>
-
-<div id="getting-started">
-  <img src="/cpppig-visualization-small.png" alt="Political Link Graph" class="img-responsive" align="right">
+  <h2 class='section-heading'>Introduction</h2>
+  <ol>
   <p>This website is home to the <strong>Web Archives for Longitudinal Knowledge (WALK) Project</strong>, an envisioned Canadian national Web Archiving portal. Spearheaded by the <a href="https://uwaterloo.ca/">University of Waterloo</a>, <a href="http://yorku.ca/">York University</a>, and the <a href="https://ualberta.ca/">University of Alberta</a>, we plan to bring together interested Canadian partners to provide access to their collections.</p>
   <p>Currently, this is a prototype site providing access to one such archive, the University of Toronto's Canadian Political Parties and Political Interest Groups collection. This website allows you to search content from 50 political parties and political interest groups, from October 2005 to March 2015.</strong></p>
+  <img src="http://webarchives.ca/assets/images/cpppig-visualization.png" alt="Political Link Graph" class="img-responsive">
   <p>Curious how the Liberal Party of Canada responded to the 2008 financial crisis (<a href="/?f%5Bdomain%5D%5B%5D=liberal.ca&q=recession&search_field=all_fields">a search for "recession" in 2008, liberal.ca</a>)? How the Canadian Centre for Policy Alternatives <a href="/?f%5Bdomain%5D%5B%5D=policyalternatives.ca&q=%22Michael+Ignatieff%22&search_field=all_fields">reacted to Michael Ignatieff</a>? Now you can check it all out.</p>
-</div>
-
-<script>
-  $(function() {
-    $('#about a').on('click', function(e) {
-      e.preventDefault();
-
-      if ($('#about-content').html() == "") {
-        $('#about-content').load($(this).attr("href"), function() {
-          $('#about-content').show();
-        });
-      } else {
-        $('#about-content').toggle();
-      }
-    });
-  });
-</script>
+  </ol>
