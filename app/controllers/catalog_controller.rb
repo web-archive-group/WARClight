@@ -88,7 +88,7 @@ class CatalogController < ApplicationController
     
     config.add_facet_field 'content_type_norm', label: "General Content Type", collapse: false
     config.add_facet_field 'crawl_years', label: "Crawl Years", collapse: false
-    config.add_facet_field 'links_public_suffixes', label: "Links to Public Suffixes"
+    #config.add_facet_field 'links_public_suffixes', label: "Links to Public Suffixes"
     config.add_facet_field 'domain', label: "Domain"
     config.add_facet_field 'links_domains', label: "Links Domains"
 
@@ -105,6 +105,8 @@ class CatalogController < ApplicationController
     config.add_index_field 'crawl_date', label: 'Crawl Date'
     config.add_index_field 'content_type', label: 'Content Type'
     config.add_index_field 'domain', label: 'Domain'
+    config.add_index_field 'links_domains', label: "This page links to"
+
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
@@ -135,7 +137,6 @@ class CatalogController < ApplicationController
     # since we aren't specifying it otherwise.
 
     config.add_search_field 'all_fields', label: 'All Fields'
-
 
     # Now we see how to over-ride Solr request handler defaults, in this
     # case for a BL "search field", which is really a dismax aggregate
