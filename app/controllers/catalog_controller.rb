@@ -90,8 +90,11 @@ class CatalogController < ApplicationController
     config.add_facet_field 'crawl_years', label: "Crawl Years", collapse: false
     #config.add_facet_field 'links_public_suffixes', label: "Links to Public Suffixes"
     config.add_facet_field 'domain', label: "Domain"
+    #config.add_facet_field 'content_language', label: "Language"
     config.add_facet_field 'links_domains', label: "Links Domains"
-
+    config.add_facet_field 'institution', label: "Institution"
+    config.add_facet_field 'collection_name', label: "Collection Name"
+    config.add_facet_field 'collection_number', label: "Collection Number"
     
     # # Have BL send all facet field names to Solr, which has been the default
     # # previously. Simply remove these lines if you'd rather use Solr request
@@ -106,6 +109,10 @@ class CatalogController < ApplicationController
     config.add_index_field 'content_type', label: 'Content Type'
     config.add_index_field 'domain', label: 'Domain'
     config.add_index_field 'links_domains', label: "This page links to"
+    #config.add_index_field 'content_language', label: "Language"
+    config.add_index_field 'institution', label: "Institution"
+    config.add_index_field 'collection_name', label: "Collection Name"
+    config.add_index_field 'collection_number', label: "Collection Number"
 
 
     # solr fields to be displayed in the show (single result) view
