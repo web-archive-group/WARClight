@@ -1,5 +1,4 @@
-BlacklightWALK
-==============
+# WARClight
 
 **Blacklight instance operating on [WALK webarchiving data](http://webarchives.ca/)**
 
@@ -23,5 +22,3 @@ To use standalone Solr
 6. Edit `config/blacklight.yml` to use the URL of the Solr index.
 
 Run `rails s` to start the application.
-
-
