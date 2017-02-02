@@ -8,7 +8,7 @@ To install (developers):
    (i.e. [Node.js](https://nodejs.org/en/))
 2. Clone this repo. (e.g. `git clone
    http://github.com/web-archive-group/BlacklightWALK`)
-3. `cd BlacklightWalk`
+3. `cd WARClight`
 4. `bundle install`
 5. `rake db:migrate`
 
