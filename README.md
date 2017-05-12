@@ -7,7 +7,7 @@ To install (developers):
 1. Requirements: [Git](https://git-scm.com/), [Ruby](https://www.ruby-lang.org/en/), [Rails](http://rubyonrails.org/), [Bundler](http://bundler.io/), [Java](https://java.com/en/download/), Javascript runtime
    (i.e. [Node.js](https://nodejs.org/en/))
 2. Clone this repo. (e.g. `git clone
-   http://github.com/web-archive-group/BlacklightWALK`)
+   http://github.com/web-archive-group/WARClight`)
 3. `cd WARClight`
 4. `bundle install`
 5. `rake db:migrate`
