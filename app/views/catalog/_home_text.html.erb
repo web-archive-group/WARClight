@@ -17,8 +17,8 @@
 
 <div id="carousel_CATEGORY1">
 <h2 class='category-heading'> A CATEGORY </h2>
-<p> here </p>
-<img class='carousel' src="example1.png" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;" />
+
+<%= link_to image_tag('200/ALBERTA_health_sciences_grey_literature-200.png', style:"float: left", width: "22%"), description_show_path(:id => 2) %>
 
 <img class='carousel' src="network1.png" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/>
 
@@ -27,7 +27,7 @@
 <img class='carousel' src="network2.png" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/>
 <p style="clear: both;">
 
-<div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/>  Example Network File 1 </div>
+<div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/>  Alberta Health Sciences Grey Literature </div>
 <div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/> Example Network File 2 </div>
 <div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/ > Example Network File 2 </div>
 <div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/> Energy and the Environment </div>
@@ -71,19 +71,3 @@
 </div>
 
 
-<script>
-$(function() {
-$('#carousel_CATEGORY1').on('click', function(e) {
-alert("hey!");
-e.preventDefault();
-
-if ($('#about-content').html() == "") {
-$('#about-content').load($(this).attr("href"), function() {
-$('#about-content').show();
-});
-} else {
-$('#about-content').toggle();
-}
-});
-});
-</script>

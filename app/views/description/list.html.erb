@@ -1,0 +1,12 @@
+<% if @descriptions.blank? %>
+<p>There are not any books currently in the system.</p>
+<% else %>
+<p>These are the current books in our system</p>
+
+<ul id = "descriptions">
+<% @descriptions.each do |c| %>
+<li><%= link_to c.name, {:action => 'show', :id => c.id} -%></li>
+<% end %>
+</ul>
+
+<% end %>

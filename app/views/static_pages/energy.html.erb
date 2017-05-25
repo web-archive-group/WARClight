@@ -1,0 +1,46 @@
+<div class="page-header row">
+<h1 class="col-md-8 page-heading"><%= t('blacklight.Web Archives for Longitudinal Knowledge') %></h1>
+<ul class="nav nav-pills col-md-4">
+<li><a href="https://dataverse.scholarsportal.info/dataverse/wahr">Derivative Data</a></li>
+<li><a href="http://webarchives.ca/">Old Portal</a></li>
+<li><a href="https://github.com/web-archive-group/WALK">GitHub</a></li>
+<li><a href="/static_pages/about">About</a></li>
+</ul>
+
+</div>
+
+<div id="getting-started">
+<img src="/UTL-logo-blue.png" class="img-responsive" alt="Unviersity of Toronto Libraries" align="left" />
+<h2>Collections</h2>
+<h3>Canadian Political Parties and Political Interest Groups</h3>
+<img src="/cpppig-visualization-small.png" alt="Political Link Graph" class="img-responsive" align="right">
+<p>The Canadian Political Parties and Political Interest Group collection (CPP) as been collected by the University of Toronto Libraries since late 2005. For information on what is within this collection, please see the <a href="https://archive-it.org/collections/227">University of Toronto's page here</a>.</p>
+<p>A visualization of what has been collected over time can by <a href="http://lintool.github.io/warcbase/vis/crawl-sites/">following this link</a>.
+<p>You can directly search the collection by clicking here, bringing you to the search portal for this collection alone.</p>
+<h4>Available Datasets</h4>
+<p>The following datasets are available for this collection:</p>
+<p><ul>
+<li><a href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=hdl:10864/12040">Network Diagram: GEFX format (Gephi) or CSV</a></li>
+<li><a href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=hdl:10864/12040">Interactive d3.js link node</a></li>
+<li><a href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=hdl:10864/12040">List of URLs present in collection over time</a></li>
+</ul></p>
+<br />
+<br />
+<br />
+
+<script>
+$(function() {
+$('#carousel_CATEGORY1').on('click', function(e) {
+alert("hey!");
+e.preventDefault();
+
+if ($('#about-content').html() == "") {
+$('#about-content').load($(this).attr("href"), function() {
+$('#about-content').show();
+});
+} else {
+$('#about-content').toggle();
+}
+});
+});
+</script>

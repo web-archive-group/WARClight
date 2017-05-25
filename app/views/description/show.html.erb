@@ -1,0 +1,16 @@
+<h1><%= @description.name %></h1>
+
+<%= image_tag("800/" + @description.filename + "-800.png", size: "800x200") %>
+
+<p>
+<%= @description.institutional %><br /><br />
+<%= @description.walk_desc %><br />
+<strong>Crawl notes:</strong> <%= @description.graphviz %><br />
+<strong>Network notes: </strong><%= @description.network %><br />
+</p>
+
+<p>graphml: <%= link_to "Graphml", "https://github.com/web-archive-group/Descriptor/raw/master/descriptor/data/" + @description.filename + ".graphml" %></p>
+
+<hr />
+
+<%= link_to 'Back', {:action => 'list'} %>
