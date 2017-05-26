@@ -12,6 +12,8 @@ To install (developers):
 4. `bundle install`
 5. `rake db:migrate`
 
+If you get errors, may need to reset db `rake db:reset`.
+
 To use the bundled Solr index:
 
 6. Copy a Solr index of WALK data into `jetty/solr/discovery/data/index`
