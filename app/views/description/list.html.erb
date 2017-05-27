@@ -1,11 +1,13 @@
 <% if @descriptions.blank? %>
 <p>There are not any books currently in the system.</p>
 <% else %>
-<p>These are the current books in our system</p>
+<p>These are the current collections for the keyword "prairies".</p>
 
 <ul id = "descriptions">
 <% @descriptions.each do |c| %>
-<li><%= link_to c.name, {:action => 'show', :id => c.id} -%></li>
+<% if c.keywords.split(",").map(&:strip).include?("prairies") %>
+<%= link_to image_tag('200/' + c.filename + '-200.png', style: "float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em" ), {:action => 'show', :id => c.id} -%>
+<% end %>
 <% end %>
 </ul>
 
