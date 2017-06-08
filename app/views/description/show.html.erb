@@ -12,6 +12,9 @@
 <%= link_to c + " ", description_list_path(:keyword => c) %>
 <% end %>
 <br /><br />
+<strong>Crawl notes:</strong> <%= @description.graphviz %><br />
+<strong>Network notes: </strong><%= @description.network %><br />
+<strong>Keywords: </strong> <%= @description.keywords %><br />
 </p>
 
 <p>graphml: <%= link_to "Graphml", "https://github.com/web-archive-group/Descriptor/raw/master/descriptor/data/" + @description.filename + ".graphml" %></p>
