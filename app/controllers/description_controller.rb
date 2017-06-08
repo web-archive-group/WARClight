@@ -1,6 +1,7 @@
 class DescriptionController < ApplicationController
         def list
             @descriptions = Description.all
+            @keyword = params[:keyword]
         end
         
         def show

@@ -4,10 +4,14 @@
 
 <p>
 <%= @description.institutional %><br /><br />
-<%= @description.walk_desc %><br />
-<strong>Crawl notes:</strong> <%= @description.graphviz %><br />
-<strong>Network notes: </strong><%= @description.network %><br />
-<strong> Keywords: </strong> <%= @description.keywords %><br />
+<%= @description.walk_desc %><br /><br />
+<strong>Crawl notes:</strong> <%= @description.graphviz %><br /><br />
+<%= link_to "Time-series visualization of crawl", "https://web-archive-group.github.io/WALK-CrawlVis/crawl-sites/" + @description.filename + "-all.html" %><br /><br />
+<strong>Network notes: </strong><%= @description.network %><br /><br />
+<strong> Keywords: </strong> <% @description.keywords.split(",").map(&:strip).each do |c| %>
+<%= link_to c + " ", description_list_path(:keyword => c) %>
+<% end %>
+<br /><br />
 </p>
 
 <p>graphml: <%= link_to "Graphml", "https://github.com/web-archive-group/Descriptor/raw/master/descriptor/data/" + @description.filename + ".graphml" %></p>

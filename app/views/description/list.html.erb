@@ -1,14 +1,20 @@
+
 <% if @descriptions.blank? %>
-<p>There are not any books currently in the system.</p>
+<p>There are not any web archives tagged <i>"<% @keyword %>"</i>..</p>
 <% else %>
-<p>These are the current collections for the keyword "prairies".</p>
+<p>These are the current collections for the keyword <i><%= @keyword.inspect %></i>.</p>
 
 <ul id = "descriptions">
 <% @descriptions.each do |c| %>
-<% if c.keywords.split(",").map(&:strip).include?("prairies") %>
-<%= link_to image_tag('200/' + c.filename + '-200.png', style: "float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em" ), {:action => 'show', :id => c.id} -%>
+
+<% if c.keywords.split(",").map(&:strip).include?(@keyword) %>
+<figure>
+<%= link_to image_tag('200/' + c.filename + '-200.png' ), {:action => 'show', :id => c.id} -%>
+<figcaption> <%= link_to c.name, description_show_path(:id => c.id) -%> </figcaption>
+</figure>
 <% end %>
 <% end %>
+
 </ul>
 
 <% end %>
