@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170525150454) do
+ActiveRecord::Schema.define(version: 20170613181249) do
 
   create_table "bookmarks", force: :cascade do |t|
     t.integer  "user_id",       null: false
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 20170525150454) do
   end
 
   create_table "descriptions", force: :cascade do |t|
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.string   "name"
     t.text     "walk_desc"
     t.string   "filename"
@@ -34,6 +34,10 @@ ActiveRecord::Schema.define(version: 20170525150454) do
     t.text     "institutional"
     t.text     "network"
     t.text     "keywords"
+    t.string   "stats"
+    t.string   "dataverse_url"
+    t.string   "archive_it_url"
+    t.text     "summary"
   end
 
   create_table "searches", force: :cascade do |t|

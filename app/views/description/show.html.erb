@@ -1,6 +1,6 @@
 <h1><%= @description.name %></h1>
 
-<%= image_tag("800/" + @description.filename + "-800.png", size: "800x200") %>
+<%= link_to image_tag("800/" + @description.filename + "-800.png", size: "800x200"), @description.archive_it_url %>
 
 <p>
 <%= @description.institutional %><br /><br />
@@ -14,10 +14,15 @@
 <br /><br />
 <strong>Crawl notes:</strong> <%= @description.graphviz %><br />
 <strong>Network notes: </strong><%= @description.network %><br />
-<strong>Keywords: </strong> <%= @description.keywords %><br />
-</p>
+<strong> Total nodes:  </strong> <%= @description.stats.split(",")[0] %>
+<strong> Total edges: </strong><%= @description.stats.split(",")[1] %>
+<strong> Average degree: </strong><%= @description.stats.split(",")[2] %><br /><br />
 
-<p>graphml: <%= link_to "Graphml", "https://github.com/web-archive-group/Descriptor/raw/master/descriptor/data/" + @description.filename + ".graphml" %></p>
+
+<p>
+<%= link_to "Graphml", @description.dataverse_url %><br />
+<%= link_to "Archive-it page", @description.archive_it_url %><br />
+</p>
 
 <p>
 

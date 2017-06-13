@@ -6,6 +6,7 @@ class DescriptionController < ApplicationController
         
         def show
             @description = Description.find(params[:id])
+            #@stats = Description.find(params[:id]).stats.split(",").map(&:strip)
         end
         
         def new
@@ -13,7 +14,7 @@ class DescriptionController < ApplicationController
         end
         
         def description_params
-            params.require(:descriptions).permit(:name, :institutional, :walk_desc, :filename, :graphviz, :network, :keywords)
+            params.require(:descriptions).permit(:name, :institutional, :walk_desc, :filename, :graphviz, :network, :keywords, :stats, :archive_it_url, :dataverse_url, :summary)
         end
         
         def create
@@ -29,7 +30,7 @@ class DescriptionController < ApplicationController
         end
         
         def description_param
-            params.require(:description).permit(:name, :institutional, :walk_desc, :filename, :graphviz, :network, :keywords)
+            params.require(:description).permit(:name, :institutional, :walk_desc, :filename, :graphviz, :network, :keywords, :stats, :archive_it_url, :dataverse_url, :summary)
         end
         
         def update
