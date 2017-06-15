@@ -6,7 +6,7 @@ figure {
 float: left;
 padding: 2px;
 width: 205px;
-height: 275px;
+height: 300px;
 margin-right: 5px;
 margin-bottom: 20em;
 margin-top: 20em;
@@ -27,4 +27,17 @@ figure figcaption {
 border: 1px dotted blue;
 text-align: center;
 margin-bottom: 20em;
+}
+
+.row div.nav {
+float: right;
+}
+
+.nav-pills {
+
+}
+
+.description-notes {
+width: 800px;
+margin: 10px 10px 10px 20px;
 }

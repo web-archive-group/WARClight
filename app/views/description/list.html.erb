@@ -10,7 +10,9 @@
 <% if c.keywords.split(",").map(&:strip).include?(@keyword) %>
 <figure>
 <%= link_to image_tag('200/' + c.filename + '-200.png' ), {:action => 'show', :id => c.id} -%>
-<figcaption> <%= link_to c.name, description_show_path(:id => c.id) -%> </figcaption>
+<figcaption> <%= link_to c.name, description_show_path(:id => c.id) -%><br />
+<%= c.summary %>
+</figcaption>
 </figure>
 <% end %>
 <% end %>

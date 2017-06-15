@@ -1,30 +1,39 @@
+
+
+<div class="description-notes">
 <h1><%= @description.name %></h1>
 
+
+
 <%= link_to image_tag("800/" + @description.filename + "-800.png", size: "800x200"), @description.archive_it_url %>
+
+<p>
+<%= link_to "Archive page", @description.archive_it_url %><br />
+<%= link_to "Graphml", @description.dataverse_url %><br />
+<%= link_to "Time-series visualization of crawls", "https://web-archive-group.github.io/WALK-CrawlVis/crawl-sites/" + @description.filename + "-all.html" %><br /><br />
+</p>
+
+
 
 <p>
 <%= @description.institutional %><br /><br />
 <%= @description.walk_desc %><br /><br />
 <strong>Crawl notes:</strong> <%= @description.graphviz %><br /><br />
-<%= link_to "Time-series visualization of crawl", "https://web-archive-group.github.io/WALK-CrawlVis/crawl-sites/" + @description.filename + "-all.html" %><br /><br />
+
+
+
 <strong>Network notes: </strong><%= @description.network %><br /><br />
 <strong> Keywords: </strong> <% @description.keywords.split(",").map(&:strip).each do |c| %>
 <%= link_to c + " ", description_list_path(:keyword => c) %>
 <% end %>
 <br /><br />
-<strong>Crawl notes:</strong> <%= @description.graphviz %><br />
 <strong>Network notes: </strong><%= @description.network %><br />
 <strong> Total nodes:  </strong> <%= @description.stats.split(",")[0] %>
 <strong> Total edges: </strong><%= @description.stats.split(",")[1] %>
 <strong> Average degree: </strong><%= @description.stats.split(",")[2] %><br /><br />
 
-
 <p>
-<%= link_to "Graphml", @description.dataverse_url %><br />
-<%= link_to "Archive-it page", @description.archive_it_url %><br />
-</p>
-
-<p>
+</div>
 
 <hr />
 
