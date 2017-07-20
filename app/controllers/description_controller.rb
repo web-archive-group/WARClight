@@ -4,7 +4,7 @@ class DescriptionController < ApplicationController
             @keyword = params[:keyword]
         end
         
-        def show
+        def showdescription
             @description = Description.find(params[:id])
             #@stats = Description.find(params[:id]).stats.split(",").map(&:strip)
         end
