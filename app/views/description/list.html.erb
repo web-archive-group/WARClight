@@ -1,0 +1,22 @@
+
+<% if @descriptions.blank? %>
+<p>There are not any web archives tagged <i>"<% @keyword %>"</i>..</p>
+<% else %>
+<p>These are the current collections for the keyword <i><%= @keyword.inspect %></i>.</p>
+
+<ul id = "descriptions">
+<% @descriptions.each do |c| %>
+
+<% if c.keywords.split(",").map(&:strip).include?(@keyword) %>
+<figure>
+<%= link_to image_tag('200/' + c.filename + '-200.png' ), {:action => 'showdescription', :id => c.id} -%>
+<figcaption> <%= link_to c.name, description_showdescription_path(:id => c.id) -%><br />
+<%= c.summary %>
+</figcaption>
+</figure>
+<% end %>
+<% end %>
+
+</ul>
+
+<% end %>

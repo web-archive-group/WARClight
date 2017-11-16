@@ -1,0 +1,43 @@
+// Place all the styles related to the Description controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+figure {
+float: left;
+padding: 2px;
+width: 205px;
+height: 300px;
+margin-right: 5px;
+margin-bottom: 20em;
+margin-top: 20em;
+}
+
+figure :hover {
+background-color: yellow
+}
+
+figure a img {
+width: 200px;
+height: 200px;
+padding: 5px;
+border: 1px dotted gray;
+}
+
+figure figcaption {
+border: 1px dotted blue;
+text-align: center;
+margin-bottom: 20em;
+}
+
+.row div.nav {
+float: right;
+}
+
+.nav-pills {
+
+}
+
+.description-notes {
+width: 800px;
+margin: 10px 10px 10px 20px;
+}

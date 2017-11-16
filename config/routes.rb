@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'static_pages/about'
   get 'static_pages/help'
   get 'static_pages/toronto'
+  get 'description/showdescription'
+  get 'description/list'
 
   mount Blacklight::Engine => '/'
   Blacklight::Marc.add_routes(self)

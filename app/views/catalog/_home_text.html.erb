@@ -1,51 +1,80 @@
-<div class="page-header row">
-  <h1 class="col-md-8 page-heading"><%= t('blacklight.Web Archives for Longitudinal Knowledge') %></h1>
-  <ul class="nav nav-pills col-md-4">
-    <li><a href="https://dataverse.scholarsportal.info/dataverse/wahr">Derivative Data</a></li>
-    <li><a href="http://webarchives.ca/">Old Portal</a></li>
-    <li><a href="https://github.com/web-archive-group/WALK">GitHub</a></li>
-    <li><a href="/static_pages/about">About</a></li>
-  </ul>
 
-
+<div class="nav nav-pills col-md-4">
+<a href="https://dataverse.scholarsportal.info/dataverse/wahr">Data</a> &#9643;
+<a href="http://webarchives.ca/">Old Site</a> &#9643;
+<a href="https://github.com/web-archive-group/WALK">GitHub</a> &#9643;
+<a href="/static_pages/about">About</a>
 </div>
 
 <div id="getting-started">
-  <img src="/cpppig-visualization-small.png" alt="Political Link Graph" class="img-responsive" align="right">
-  <p>Big Data is reshaping the historical profession and society in ways we are only now beginning to grasp. Tremendous new opportunities are opening up for social and cultural historians. Large web archives contain billions of webpages, from personal homepages to professional or academic websites, offering the ability to reconstruct large-scale aspects of the recent past. Yet the sheer size of these primary sources presents significant challenges: if the norm until the digital era was to have human information vanish, “now expectations have inverted. Everything may be recorded and preserved, at least potentially” (as James Gleick noted in his 2012 <em>The Information: A History, a Theory, a Flood</em>).</p>
-  <p>Welcome to the <strong>Web Archives for Longitudinal Knowledge (WALK) Project</strong>. Spearheaded by the <a href="https://uwaterloo.ca/">University of Waterloo</a>, <a href="http://yorku.ca/">York University</a>, and the <a href="https://ualberta.ca/">University of Alberta</a>, we are bringing together Canadian partners to provide access to their collections.</p>
-</div>
-<div id="partners">
-  <h2>Our partners</h2>
-  <p>Our project provides access to the holdings of six partners across Canada. For each collection, click on the logo below to be brought to collections information, datasets, and search portals. Or dig in above to search them all!</p>
-  <img src="/ualib-logo-500w.png" class="img-responsive" alt="Unviersity of Alberta Libraries" align="center" />
-  <img src="/dalhousie.png" class="img-responsive" alt="Dalhousie University logo" align="center" />
-  <img src="/sfu-logo@2x.png" class="img-responsive" alt="Simon Fraser University logo" align="center" />
-  <a href="http://localhost:3000/static_pages/toronto"><img src="/UTL-logo-blue-500w.png" class="img-responsive" alt="Unviersity of Toronto Libraries" align="center" /></a>
-  <img src="/UVIC_Logo.jpg" class="img-responsive" alt="Unviersity of Victoria Libraries" align="center" />
-  <img src="/UW_horiz_rgb-black.png" class="img-responsive" alt="University of Winnipeg logo" align="center" />
+<h2 class='section-heading'>Browse Our Collection Descriptions</h2>
+<p>WebArch is a searchable database of web archives collected by a growing number of Canadian Universities.</p>
 </div>
 
+<div id=id="carousel1">
+<h2 class='category-heading'> <%= link_to "Historical Events", description_list_path(:keyword => "event") %> </h2>
+<%= link_to image_tag('200/TORONTO_snowden_archive-200.png', style: "float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em"), description_showdescription_path(:id => 18) %>
 
-<div id="acknowlgements">
-  <h2>Acknowlegements</h2>
-  <p>This research was supported by <a href="https://www.computecanada.ca/">Compute Canada</a> and the <a href="http://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx">Social Sciences and Humanities Research Council of Canada</a>. Additional support was forthcoming from the <a href="https://www.ontario.ca/page/early-researcher-awards">Ontario Ministry of Research and Innovation's Early Researcher Award</a>.</p>
-  <a href="http://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx"><img src="/sshrc_fip_wordmark_eng.jpg" alt="Social Sciences and Humanities Research Council wordmark and logo" class="img-responsive" align="left"></a>
-  <a href="https://www.computecanada.ca/"><img src="/biligual-cc-web-logo-flat-white.png" alt="Compute Canada wordmark and logo" class="img-responsive" align="left"></a>
-  <a href="https://www.ontario.ca/page/early-researcher-awards"><img src="/ontario-logo.png" alt="Ontario logo" class="img-responsive" align="right"></a>
+<%= link_to image_tag('200/ALBERTA_ottawa_shooting_october_2014-200.png', style: "float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em"), description_showdescription_path(:id => 22) %>
+
+<%= link_to image_tag('200/TORONTO_toronto_2015_pan_am_american_games-200.png', style: "float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em"), description_showdescription_path(:id => 7) %>
+
+<p style="clear: both;">
+
+<div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/>  Edward Snowden Archive </div>
+<div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/> Ottawa Shooting October 2014 </div>
+<div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/ > Toronto Pan Am Games </div>
+
+
+<p style="clear: both;">
+</div>
+<div id="carousel2">
+<h2 class='category-heading'> <%= link_to "Culture and Ethnicity", description_list_path(:keyword => "culture") %> </h2>
+
+
+<%= link_to image_tag('200/WINNIPEG_truth_reconciliation-200.png', style: "float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em"), description_showdescription_path(:id => 15) %>
+<%= link_to image_tag('200/ALBERTA_heritage_community_foundation-200.png', style: "float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em"), description_showdescription_path(:id => 1) %>
+<%= link_to image_tag('200/ALBERTA_western_canadian_film-200.png', style: "float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em"), description_showdescription_path(:id => 3) %>
+
+
+
+<p style="clear: both;">
+
+<div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/> Truth and Reconcilliation </div>
+<div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/> Community Heritage Foundation </div>
+<div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/ > Western Canadian Film </div>
+</div>
+<p style="clear: both;">
+
+<div id="carousel3">
+
+<h2 class='category-heading'> <%= link_to "Science, Technology and the Environment", description_list_path(:keyword => "science") %> </h2>
+
+<%= link_to image_tag('200/ALBERTA_health_sciences_grey_literature-200.png', style: "float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em"), description_showdescription_path(:id => 2) %>
+
+<%= link_to image_tag('200/DALHOUSIE_Ransom_Myers-200.png', style: "float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em"), description_showdescription_path(:id => 4) %>
+
+<p style="clear: both;">
+
+<div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/>  Alberta Health Sciences Grey Literature </div>
+<div class="network_text" id="CATEGORY1" style="float: left; width: 22%; margin-right: 1%; margin-bottom: 0.5em;"/> Ransom Myers Web Archive </div>
+>
+<p style="clear: both;">
+</div>
 
 <script>
-  $(function() {
-    $('#about a').on('click', function(e) {
-      e.preventDefault();
-
-      if ($('#about-content').html() == "") {
-        $('#about-content').load($(this).attr("href"), function() {
-          $('#about-content').show();
-        });
-      } else {
-        $('#about-content').toggle();
-      }
-    });
-  });
+$(function() {
+$('#about a').on('click', function(e) {
+e.preventDefault();
+if ($('#about-content').html() == "") {
+$('#about-content').load($(this).attr("href"), function() {
+$('#about-content').show();
+});
+} else {
+$('#about-content').toggle();
+}
+});
+});
 </script>
+
+

@@ -12,6 +12,9 @@ To install (developers):
 3. `cd WARClight`
 4. `bundle install`
 5. `rake db:migrate`
+6. `rake db:seed` to seed the database with WALK descriptions.
+
+If you get errors, may need to reset db `rake db:reset`.
 
 To use the bundled Solr index:
 
